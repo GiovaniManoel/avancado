@@ -1,5 +1,4 @@
 
-
 // Modo antigo de criar template string
 
 window.onload = function () {
@@ -13,7 +12,9 @@ window.onload = function () {
 
 // Modo novo de criar template string com cráse
 
-window.onload = function () {
+window.onload = menu;
+ 
+function menu () {
 
     let meuTemplate1 = `<a>Template aqui</a>
                         <a>Template aqui</a>
