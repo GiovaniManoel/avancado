@@ -17,57 +17,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/menuGeral.js"></script>
+    <script src="../js/frases.js"></script>
 </head>
 
 <body>
     <div id="menuGeral"></div>
     <!--  -->
     <div class="container espaco-cima">
-        <div class="row espaco-lateral">
-            <!-- Accordion começa aqui -->
-            <button class="accordion">Frase 1</button>
-            <div class="panel">
-                <p>- Não deixe de fazer algo bom, por achar que está fazendo pouco.</p>
-            </div>
-
-            <button class="accordion">Frase 2</button>
-            <div class="panel">
-                <p>- Assim como a Lua, a Vida é dividida em fases.</p>
-            </div>
-
-            <button class="accordion">Frase 3</button>
-            <div class="panel">
-                <p>- Aceite o que não pode mudar, mude o que não pode aceitar.</p>
-            </div>
-
-            <button class="accordion">Frase 4</button>
-            <div class="panel">
-                <p>- Você faz suas escolhas e as suas escolhas fazem você.</p>
-            </div>
-
-            <button class="accordion">Frase 5</button>
-            <div class="panel">
-                <p>- Ninguém alcança sonhos altos antes de saber a dor de cair.</p>
-            </div>
+        <div id="frases" class="row espaco-lateral">
+            <!-- Recebe o arquivo JSON do Javascript -->
         </div>
     </div>
-    <!-- Script JS do Accordion -->
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-        }
-    </script>
+    
+    
 </body>
 
 </html>
