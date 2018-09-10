@@ -3,7 +3,7 @@ getFrases();
 
 function getFrases(){
 
-    let url = 'http://127.0.0.1:5500/json/frases.json';
+    let url = 'http://127.0.0.1:5000/json/frases.json';
 
     fetch(url)
         .then(function(response){
@@ -19,9 +19,11 @@ function preencherHTML(data){
     
     data.forEach(element => {
 
+        let textoFormatado = element.texto.replace(/\n/g,"<br/>");
+
         template += `<button class="accordion">Frase ${element.id} - ${element.titulo}</button>
                         <div class="panel">
-                            <p>- ${element.texto}</p>
+                            <p>- ${textoFormatado}</p>
                         </div>`;
     });
     
