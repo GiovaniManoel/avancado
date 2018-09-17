@@ -33,8 +33,6 @@ Clonar Repositório
     Servidor --> git clone usuário@servidor:/caminho/para/o/repositório
 
 
-
-
 Adicionar Arquivo
 
     Adicionar Arquivo Único --> git add <arquivo>
